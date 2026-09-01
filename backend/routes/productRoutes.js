@@ -40,7 +40,7 @@ router.post("/", async (req, res) => {
 });
 
 // PUT - Update Product
-router.put("/:id", async (req, res) => {
+router.put("/:", async (req, res) => {
   try {
     const product = await Product.findByIdAndUpdate(
       req.params.id,
